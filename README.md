@@ -44,3 +44,6 @@ Follow the [YTMusicAPI setup for browser.json](https://ytmusicapi.readthedocs.io
 Execute the code using browser.json file, Discord ID, and Discord image name
 > [!IMPORTANT]
 > For some reason, it only works when executed in debug mode in VSCode, trying to fix this issue, but for now, you can execute using debug mode
+
+# 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
