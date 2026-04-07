@@ -40,7 +40,40 @@ For the script to "listen" to what you're listening to, you need to permit it th
 
 Follow the [YTMusicAPI setup for browser.json](https://ytmusicapi.readthedocs.io/en/stable/setup/browser.html)
 
-### 3. execute the Code
+### 3. Discord Developer Application Creation
+
+In order to connect the script with your Discord account, it will be necessary to create your Discord developer application:
+
+Visit Discord Developer Portal.
+
+Press “New Application” and give a name to it (e.g. YouTube Music).
+
+Retrieve your Application ID under the “General Information” section (that’s where the script will look up).
+
+Setting Up Application Icon:
+
+Open Rich Presence -> Art Assets
+
+Upload an image (YouTube Music icon)
+
+Rename this file to “embedded_cover” (as per the requirements of the code).
+
+Save changes.
+
+### 3b. Configuring Your Python Script
+
+Open Main_File_NoUI.py and locate the “configuration” part:
+
+Look for client_id and insert your Application ID there.
+
+>[!NOTE]
+>Do not confuse it with "Bot Token"
+
+### 3c. Allowing the Script Access (The Connection Step)
+
+In order for the script to have the ability to edit your activities within Discord, you will need to grant access. This may be done by selecting the “Installation” tab from the menu on the left side, which appears below “Overview.” When required, make sure to select “User Installation” and deselect “Server Installation.” Under “Install Link,” ensure that the setting has been set to “Discord Provided Link.” Open a tab and enter the link to allow the app access.
+
+### 4. execute the Code
 Execute the code using browser.json file, Discord ID, and Discord image name
 > [!IMPORTANT]
 > For some reason, it only works when executed in debug mode in VSCode, trying to fix this issue, but for now, you can execute using debug mode
