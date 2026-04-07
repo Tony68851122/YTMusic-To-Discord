@@ -14,7 +14,7 @@ else:
     exit()
 
 # Initialize Discord RPC
-RPC = Presence(1448110214607011890)
+RPC = Presence()
 RPC.connect()
 print("✓ Discord RPC connected")
 
